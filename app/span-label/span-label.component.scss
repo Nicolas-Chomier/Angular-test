@@ -1,0 +1,29 @@
+li {
+  display: flex;
+  align-items: stretch;
+}
+
+li span {
+  width: inherit;
+  margin-left: 1px;
+  height: 100%;
+  align-items: stretch;
+}
+
+.span-style {
+  margin-top: 2px;
+  margin-bottom: 2px;
+  margin-left: 1px;
+  margin-right: 1px;
+  padding: 6px
+}
+
+.aligned-span {
+  display: inline;
+  align-items: center;
+  width: 100%;
+}
+
+.aligned-span p {
+  display: inline;
+}

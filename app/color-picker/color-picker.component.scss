@@ -1,0 +1,41 @@
+$blue: #85C1E9;
+$pink: #FEA1A1;
+$yellow: #FFE194;
+$terracotta: #c45824;
+$smokeWhite: #e2e7e8;
+
+.square {
+    margin-left: 10px;
+    width: 28px;
+    border-radius: 5px;
+    /* border: 1px solid $smokeWhite(0, 0, 0, 0.309); */
+    height: 28px;
+    display: flex;
+    cursor: pointer;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    margin-left: 1.5vw;
+}
+
+.blue {
+    background-color: $blue ;
+}
+
+.pink {
+    background-color: $pink ;
+}
+
+.yellow {
+    background-color: $yellow;
+}
+
+.terracotta {
+    background-color: $terracotta;
+}
+
+.highlighted {
+    border: 1px solid rgba(0, 0, 0, 0.308);
+}

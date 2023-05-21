@@ -1,0 +1,42 @@
+$red: #F03A5F;
+$black: #17202A;
+$white: #FBFCFC;
+$green: #7DCEA0;
+$smokeWhite: #ECF0F1;
+$anthracite: #85929E;
+
+.fieldset-style {
+    border: none;
+    position: relative;
+    justify-content: center;
+    text-align: center;
+    border: 1px solid $smokeWhite;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    padding-top: 1.5vh;
+    padding-bottom: 0.4vh;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+    margin-left: 1vw;
+    margin-right: 1vw;
+}
+
+.legend-fieldset-style {
+    position: absolute;
+    top: -14px;
+    left: 2vw;
+    background-color: $white ;
+}
+
+.fieldset-label-style {
+    text-align: center;
+}
+
+::-webkit-input-placeholder {
+    text-align: center;
+}
+
+.color-picker-style {
+    display: inline-flex;
+    align-items: center;
+}

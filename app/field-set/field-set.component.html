@@ -1,0 +1,53 @@
+<fieldset class="fieldset-style card">
+  <legend class="legend-fieldset-style">
+    {{ legend }}
+  </legend>
+  <div class="rowStack">
+    <input
+      class="no-border"
+      id="task-list"
+      type="text"
+      name="input-task"
+      minlength="{{ textLimit[0] }}"
+      maxlength="{{ textLimit[1] }}"
+      placeholder="{{ placeHolder }}"
+      size="{{ fieldSize }}"
+      [(ngModel)]="inputValue"
+      (ngModelChange)="detecterChangement($event)"
+    />
+    <button
+      class="normalBtn success"
+      [style.background-color]="bgColor"
+      (click)="addItem()"
+      [disabled]="disabledOrNot"
+    >
+      Add
+    </button>
+    <app-color-picker
+      class="color-picker-style"
+      (giveColor)="test($event)"
+    ></app-color-picker>
+  </div>
+
+  <ol class="p0 no-marker">
+    <app-span-label
+      class=""
+      draggable="true"
+      *ngFor="let item of currentItem; index as i"
+      id="{{ item.id }}"
+      [bgColor]="item.bgColor"
+      [text]="item.text"
+      [uid]="item.id"
+    ></app-span-label>
+  </ol>
+</fieldset>
+
+<!-- *******************composant a rajouter**************************** -->
+<!-- ******************************************************************* -->
+<!-- <app-field-set
+  [legend]="'Liste des tâches'"
+  [textLimit]="[2, 10]"
+  [placeHolder]="'Please enter task'"
+></app-field-set> -->
+<!-- ******************************************************************* -->
+<!-- ******************************************************************* -->
